@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/49eea5d4ba.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -21,10 +22,35 @@
           }
         }
       </script>
+      <style>
+        .sora {
+            font-family: "Sora", serif;
+        }
+
+        .adlam{
+            font-family: "ADLaM Display", serif;
+        }
+      </style>
 </head>
 <body>
     <main>
+        <header>
+            <nav class="bg-[#FFF9F4]">
+                <div class="flex items-center">
+                    <img src="assets/logo-header.png" alt="">
+                    <h3 class="sora text-2xl text-[#111111]">
+                        Browse<span class="text-[#FFDC26]">4</span>Pets
+                    </h3>
+                    <div class="flex items-center justify-between gap-8 sora text-xl text-[#111111]">
+                        <h3><a href="#">Find a pet</a></h3>
+                        <h3><a href="#">Breeds</a></h3>
+                        <h3><a href="#">Contact us</a></h3>
+                    </div>
 
+                    <div class="flex"></div>
+                </div>
+            </nav>
+        </header>
     </main>
 </body>
 </html>
